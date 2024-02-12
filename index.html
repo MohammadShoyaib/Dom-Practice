@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Practice</title>
+</head>
+<body>
+    
+    <main class="my-10">
+        <section>
+            <h2 id="Hello" class="text-6xl text-red-700 text-center">Will You marry me?</h2>
+        </section>
+
+        <section class="flex flex-row justify-center gap-8 mt-5" >
+            <button id="btn1" class="btn btn-success text-white">Yes</button>
+            <button id="btn2" class="btn btn-error">No</button>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('btn1').addEventListener('click',function (){
+            const Doc1 = document.getElementById('Hello');
+            Doc1.innerText = 'I Love You';
+        })
+
+        document.getElementById('btn2').addEventListener('click',function(){
+            const Doc2 = document.getElementById('Hello');
+            Doc2.innerText = 'Bojjat Bedi Tui Mor';
+        })
+    </script>
+</body>
+</html>
